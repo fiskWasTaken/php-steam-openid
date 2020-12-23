@@ -4,9 +4,30 @@
 composer require fisk/steam-openid
 ```
 
-This is a fork of a library originally written by xPaw. This version allows for request parameter overriding and provides more nuanced error handling.
+A simple, secure library for Steam OpenID clients. 
 
-Original description follows:
+```php
+$client = new \SteamOpenID\SteamOpenID("http://example.com");
+
+if ($client->hasResponse()) {
+    try {
+        $result = $client->validate();
+        print("signed in as {$result}");
+    } catch (Exception $e) {
+        print("error - {$e->getMessage()}");
+    }
+} else {
+    // redirect the user to Steam, however this is done in your app
+    redirect($client->getAuthUrl());
+}
+```
+
+This library does not aim to be a completely universal OpenID client, as we just want it to meet our needs for the 
+Steam OpenID gateway.
+
+This is a fork of a library originally written by xPaw. The original project readme follows:
+
+____
 
 A very minimalistic OpenID implementation that hardcodes it for Steam only,
 as using a generic OpenID library may do unnecessary steps of “discovering”
