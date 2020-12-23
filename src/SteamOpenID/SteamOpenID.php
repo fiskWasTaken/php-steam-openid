@@ -105,7 +105,7 @@ class SteamOpenID
         }
 
         if (strpos($arguments['openid_return_to'], $this->returnTo) !== 0) {
-            throw new InvalidArgumentException("expected {$this->returnTo}, actual {$arguments['return_to']}");
+            throw new InvalidArgumentException("expected {$this->returnTo}, actual {$arguments['openid_return_to']}");
         }
 
         if ($arguments['openid_claimed_id'] !== $arguments['openid_identity']) {

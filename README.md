@@ -22,6 +22,8 @@ if ($client->hasResponse()) {
 }
 ```
 
+`php -S localhost:8000 example.php`
+
 This library does not aim to be a completely universal OpenID client, as we just want it to meet our needs for the 
 Steam OpenID gateway.
 
