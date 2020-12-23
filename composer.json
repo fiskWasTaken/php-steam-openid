@@ -2,7 +2,7 @@
   "name": "fisuku/steam-openid",
   "description": "Steam OpenID consumer library",
   "license": "MIT",
-  "homepage": "https://github.com/fisuku/SteamOpenID",
+  "homepage": "https://github.com/fisuku/php-steam-openid",
   "keywords": [
     "steam",
     "valve",

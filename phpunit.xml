@@ -6,7 +6,7 @@
         </include>
     </coverage>
     <testsuites>
-        <testsuite name="Marketplace Tests">
+        <testsuite name="SteamOpenID Tests">
             <directory>./tests/SteamOpenID</directory>
         </testsuite>
     </testsuites>

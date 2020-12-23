@@ -31,6 +31,15 @@ class SteamOpenID
     }
 
     /**
+     * Returns true if the endpoint has received a positive assertion from the gateway.
+     * If false, the client should redirect the user to the Steam OpenID gateway.
+     * @return bool
+     */
+    public function hasResponse(): bool {
+        return ($this->params['openid_mode'] ?? '') === 'id_res';
+    }
+
+    /**
      * Return URL; the gateway will return information to this endpoint.
      * @return string
      */
@@ -114,7 +123,7 @@ class SteamOpenID
         $c = curl_init();
 
         curl_setopt_array($c, [
-            CURLOPT_USERAGENT => 'OpenID Verification (+https://github.com/fisuku/SteamOpenID)',
+            CURLOPT_USERAGENT => 'OpenID Verification (+https://github.com/fisuku/php-steam-openid)',
             CURLOPT_URL => 'https://steamcommunity.com/openid/login',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CONNECTTIMEOUT => 6,
