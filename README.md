@@ -22,7 +22,7 @@ if ($client->hasResponse()) {
 }
 ```
 
-`php -S localhost:8000 example.php`
+`php -S localhost:8000 example.php` will fire up an example server that redirects to the OpenID gateway and prints out the returned signed-in user ID.
 
 This library does not aim to be a completely universal OpenID client, as we just want it to meet our needs for the 
 Steam OpenID gateway.
