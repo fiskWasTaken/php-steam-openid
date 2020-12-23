@@ -1,6 +1,12 @@
 # Steam OpenID Authentication for PHP
 
-NB: This is a fork of xPaw's library. This variant is namespaced and object-oriented, 
+```
+composer require fisuku/steam-openid
+```
+
+This is a fork of a library originally written by xPaw. This version allows for request parameter overriding and provides more nuanced error handling.
+
+Original description follows:
 
 A very minimalistic OpenID implementation that hardcodes it for Steam only,
 as using a generic OpenID library may do unnecessary steps of “discovering”
