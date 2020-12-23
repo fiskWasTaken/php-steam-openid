@@ -12,13 +12,13 @@ $client = new \SteamOpenID\SteamOpenID("http://example.com");
 if ($client->hasResponse()) {
     try {
         $result = $client->validate();
-        print("signed in as {$result}");
+        print("Signed in as {$result}!");
     } catch (Exception $e) {
-        print("error - {$e->getMessage()}");
+        print($e->getMessage());
     }
 } else {
     // redirect the user to Steam, however this is done in your app
-    redirect($client->getAuthUrl());
+    header('Location: '.$client->getAuthUrl());
 }
 ```
 
