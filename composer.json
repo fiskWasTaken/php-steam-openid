@@ -1,5 +1,5 @@
 {
-  "name": "fisuku/steam-openid",
+  "name": "fisk/steam-openid",
   "description": "Steam OpenID consumer library",
   "license": "MIT",
   "homepage": "https://github.com/fisuku/php-steam-openid",

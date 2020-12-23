@@ -1,7 +1,7 @@
 # Steam OpenID Authentication for PHP [![Build Status](https://travis-ci.org/fisuku/php-steam-openid.svg?branch=master)](https://travis-ci.org/fisuku/php-steam-openid)
 
 ```
-composer require fisuku/steam-openid
+composer require fisk/steam-openid
 ```
 
 This is a fork of a library originally written by xPaw. This version allows for request parameter overriding and provides more nuanced error handling.
