@@ -1,4 +1,4 @@
-# Steam OpenID Authentication for PHP
+# Steam OpenID Authentication for PHP [![Build Status](https://travis-ci.org/fisuku/php-steam-openid.svg?branch=master)](https://travis-ci.org/fisuku/php-steam-openid)
 
 ```
 composer require fisuku/steam-openid
