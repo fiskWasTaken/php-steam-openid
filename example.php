@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require("SteamOpenID.php");
+require("vendor/autoload.php");
 
 $client = new \SteamOpenID\SteamOpenID('https://localhost/login/example.php');
 
