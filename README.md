@@ -1,5 +1,7 @@
 # Steam OpenID Authentication for PHP
 
+NB: This is a fork of xPaw's library. This variant is namespaced and object-oriented, 
+
 A very minimalistic OpenID implementation that hardcodes it for Steam only,
 as using a generic OpenID library may do unnecessary steps of “discovering”
 OpenID servers, which will end up leaking your origin server address, and worse,
