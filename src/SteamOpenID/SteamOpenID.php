@@ -129,6 +129,7 @@ class SteamOpenID
             CURLOPT_TIMEOUT => 6,
             CURLOPT_POST => true,
             CURLOPT_POSTFIELDS => $arguments,
+            CURLOPT_HTTPHEADER => ['Referer: https://steamcommunity.com', 'Origin: https://steamcommunity.com']
         ]);
 
         $response = curl_exec($c);
